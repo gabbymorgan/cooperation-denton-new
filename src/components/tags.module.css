@@ -1,10 +1,14 @@
 .tags {
   display: flex;
+  flex-flow: row wrap;
   gap: var(--space-md);
 }
 
 .tag {
-  background-color: var(--black-fade-5);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: var(--white-fade-5);
   border-radius: var(--radius-sm);
   line-height: var(--solid);
   padding: var(--space-sm) var(--space-md);
