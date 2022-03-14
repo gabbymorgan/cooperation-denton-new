@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 import Container from './container'
@@ -16,10 +15,10 @@ const ArticlePreview = ({ posts }) => {
         {posts.map((post) => {
           return (
             <li key={post.slug}>
-              <Link to={`/blog/${post.slug}`} className={styles.link}>
+              <a href={`/blog/${post.slug}`} className={styles.link}>
                 <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} />
                 <h2 className={styles.title}>{post.title}</h2>
-              </Link>
+              </a>
               <div
                 dangerouslySetInnerHTML={{
                   __html: post.description.childMarkdownRemark.html,
