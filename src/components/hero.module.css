@@ -19,7 +19,7 @@
 }
 
 .details {
-  background: var(--background);
+  background: var(--hero-text-background);
   left: 0;
   max-width: 40rem;
   width: 85%;

@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location}>
         <Seo title="Blog" />
         <Hero title="Blog" />
-        <ArticlePreview posts={posts} />
+        <ArticlePreview posts={posts.filter((post) => post.listed)} />
       </Layout>
     )
   }
@@ -31,6 +31,7 @@ export const pageQuery = graphql`
         slug
         publishDate(formatString: "MMMM Do, YYYY")
         tags
+        listed
         heroImage {
           gatsbyImageData(
             layout: FULL_WIDTH

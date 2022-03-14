@@ -18,7 +18,9 @@ class RootIndex extends React.Component {
           title={author.name}
           content={author.shortBio.shortBio}
         />
-        <ArticlePreview posts={posts} />
+        <ArticlePreview
+          posts={posts.filter((post) => post.listed).slice(0, 3)}
+        />
       </Layout>
     )
   }
@@ -34,6 +36,7 @@ export const pageQuery = graphql`
         slug
         publishDate(formatString: "MMMM Do, YYYY")
         tags
+        listed
         heroImage {
           gatsbyImageData(
             layout: FULL_WIDTH

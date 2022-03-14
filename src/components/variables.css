@@ -9,8 +9,8 @@
   --font-serif: 'Times New Roman', Times, serif;
 
   /* palette */
-  --white: #fff;
-  --black: #000;
+  --white: #fafafa;
+  --black: #212121;
   --black-fade-5: rgba(0, 0, 0, 0.05);
 
   /* radii */
@@ -53,12 +53,13 @@
   /* tokens */
   /* colors */
   --primary: #4a90e2;
-  --background: var(--white);
+  --background: var(--black);
   --border: var(--black-fade-5);
+  --hero-text-background: var(--black-fade-5);
 
   /* text */
   /* color */
-  --text-color: var(--black);
+  --text-color: var(--white);
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);
