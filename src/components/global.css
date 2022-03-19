@@ -103,3 +103,15 @@ code {
 .contentful-figure {
   text-align: center;
 }
+
+.contentful-blockquote {
+  border: solid 2px var(--border);
+  padding: 2%;
+}
+
+td {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
