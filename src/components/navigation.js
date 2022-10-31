@@ -26,8 +26,11 @@ const Navigation = () => (
         </Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="https://denton.timebanks.org" activeClassName="active">
-          Abolish Money
+        <Link
+          to="https://opencollective.com/cooperation-denton"
+          activeClassName="active"
+        >
+          Donate
         </Link>
       </li>
     </ul>
