@@ -13,6 +13,7 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
+        <a rel="me" href="https://denton.social/@coop"></a>
         <Hero
           image={author.heroImage.gatsbyImageData}
           title={author.name}
