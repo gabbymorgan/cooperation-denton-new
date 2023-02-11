@@ -61,7 +61,6 @@ class BlogPostTemplate extends React.Component {
               </nav>
             )}
           </div>
-          <BlogComments slug={post.slug} />
         </div>
       </Layout>
     )
